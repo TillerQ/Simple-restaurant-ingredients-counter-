@@ -23,7 +23,7 @@ public class fujiyama {
 			
 			}else if(val == 2) {
 				hibachiChoice = new fujiyama().HibachiMenu();
-				list = new fujiyama().calculateOrder(hibachiChoice);
+				list = new fujiyama().calculateOrderHibatchi(hibachiChoice);
 				for(int i = 0; i < 12; i++) {
 					fullList[i] = fullList[i] + list[i];
 				}
@@ -121,16 +121,16 @@ public class fujiyama {
 	public int[] calculateOrder(int input) {
 	
 		int [] rockyesChoice = {1,0,0,0,0,8,0,0,0,0,1,1};
-		int [] jackeisChoice = {1,0,0,0,0,8,0,0,0,0,1,1};
-		int [] samuri = {1,0,0,0,0,8,0,0,0,0,1,1};
-		int [] primeRibMeal = {1,0,0,0,0,8,0,0,0,0,1,1};
-		int [] landAndSea = {1,0,0,0,0,8,0,0,0,0,1,1};
-		int [] shogun = {1,0,0,0,0,8,0,0,0,0,1,1};
-		int [] surfAndTruf = {1,0,0,0,0,8,0,0,0,0,1,1};
-		int [] imperial = {1,0,0,0,0,8,0,0,0,0,1,1};
-		int [] OlympiaDeluxe = {1,0,0,0,0,8,0,0,0,0,1,1};
-		int [] pacificMarina = {1,0,0,0,0,8,0,0,0,0,1,1};
-		int [] fujiyamaDeluxe = {1,0,0,0,0,8,0,0,0,0,1,1};
+		int [] jackeisChoice = {1,0,0,0,1,2,0,0,0,0,1,1};
+		int [] samuri = {3,0,0,0,0,2,0,0,0,0,1,1};
+		int [] primeRibMeal = {0,0,0,1,0,2,0,0,0,0,1,1};
+		int [] landAndSea = {1,0,0,0,0,2,4,0,0,0,1,1};
+		int [] shogun = {0,0,2,0,0,2,0,0,0,0,1,1};
+		int [] surfAndTruf = {0,0,1,0,0,2,0,1,0,0,1,1};
+		int [] imperial = {0,0,0,0,0,2,0,2,0,0,1,1};
+		int [] OlympiaDeluxe = {0,0,1,0,1,0,0,4,0,0,1,1};
+		int [] pacificMarina = {0,0,0,0,0,2,0,4,0,1,1,1};
+		int [] fujiyamaDeluxe = {0,0,1,0,0,0,0,4,1,0,1,1};
 		
 		
 		int [] fullList = {0,0,0,0,0,0,0,0,0,0,0,0};
@@ -187,13 +187,13 @@ public class fujiyama {
 	public int[] calculateOrderHibatchi(int input) {
 		
 		
-		int [] hibachiChicken = {1,0,0,0,0,8,0,0,0,0,1,1};
-		int [] hibachiSalmon = {1,0,0,0,0,8,0,0,0,0,1,1};
-		int [] hibachiCalamari = {1,0,0,0,0,8,0,0,0,0,1,1};
-		int [] hibachiSukiyakiStake = {1,0,0,0,0,8,0,0,0,0,1,1};
-		int [] hibachiNewYorkStake = {1,0,0,0,0,8,0,0,0,0,1,1};
-		int [] hibachiShrimp = {1,0,0,0,0,8,0,0,0,0,1,1};
-		int [] hibachiScallops = {1,0,0,0,0,8,0,0,0,0,1,1};
+		int [] hibachiChicken = {0,0,0,0,2,2,0,0,0,0,1,1};
+		int [] hibachiSalmon = {0,0,0,0,0,2,0,0,0,2,1,1};
+		int [] hibachiCalamari = {0,0,0,0,0,2,0,0,2,0,1,1};
+		int [] hibachiSukiyakiStake = {0,8,0,0,0,2,0,0,0,0,1,1};
+		int [] hibachiNewYorkStake = {2,0,0,0,0,2,0,0,0,0,1,1};
+		int [] hibachiShrimp = {0,0,0,0,0,14,0,0,0,0,1,1};
+		int [] hibachiScallops = {0,0,0,0,0,0,8,0,0,0,1,1};
 		
 		int [] fullList = {0,0,0,0,0,0,0,0,0,0,0,0};
 		
